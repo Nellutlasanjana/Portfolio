@@ -1,0 +1,30 @@
+<section class="contact">
+  <h2>Contact Me</h2>
+
+  <p>📞 +91-6303241708</p>
+  <p>📧 <a href="mailto:nellutlasanjana31&#64;gmail.com">nellutlasanjana31&#64;gmail.com</a></p>
+  <p><a href="https://github.com/Nellutlasanjana" target="_blank">GitHub</a></p>
+  <p><a href="https://www.linkedin.com/in/nellutla-sanjana-b2b106230" target="_blank">LinkedIn</a></p>
+
+  <form [formGroup]="form" (ngSubmit)="submit()">
+    <label>Name</label>
+    <input type="text" formControlName="name" />
+    <div *ngIf="name?.touched && name?.invalid" class="error">
+      Name is required
+    </div>
+
+    <label>Email</label>
+    <input type="email" formControlName="email" />
+    <div *ngIf="email?.touched && email?.invalid" class="error">
+      Valid email required
+    </div>
+
+    <label>Message</label>
+    <textarea rows="4" formControlName="message"></textarea>
+    <div *ngIf="message?.touched && message?.invalid" class="error">
+      Message must be at least 5 characters
+    </div>
+
+    <button type="submit" >Send</button>
+  </form>
+</section>

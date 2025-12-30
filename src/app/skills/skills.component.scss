@@ -1,0 +1,23 @@
+.skills {
+  background: linear-gradient(135deg, #a1ffce, #faffd1);
+  padding: 20px;
+  border-radius: 12px;
+
+  h2 {
+    color: #7b2cff;
+    margin-bottom: 12px;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+      background: #fff;
+      margin: 6px 0;
+      padding: 10px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+  }
+}

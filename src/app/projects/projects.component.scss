@@ -1,0 +1,37 @@
+.projects {
+  background: linear-gradient(135deg, #d9c6ff, #ffe8f9);
+  padding: 20px;
+  border-radius: 12px;
+  overflow-y: auto;
+
+//   .scroll-area { max-height: 450px; // adjust height as needed
+//      overflow-y: auto;
+//       padding-right: 8px; // optional for scrollbar spacing
+//        }
+
+
+  .project-card {
+    background: #fff;
+    margin: 12px 0;
+    padding: 16px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+
+    h3 {
+      color: #7b2cff;
+      margin-bottom: 8px;
+    }
+
+    a {
+      display: inline-block;
+      margin-top: 8px;
+      color: #7b2cff;
+      text-decoration: none;
+      font-weight: 600;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

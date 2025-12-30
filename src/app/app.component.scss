@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background: #0d0d0d;
+  color: #f5f5f5;
+}
+
+
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 24px;
+  background: rgba(20, 20, 20, 0.85);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  height: 3vh; 
+}
+
+.brand {
+  font-weight: 600;
+  font-size: 1.5rem;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+
+  .dot {
+    color: #ff4da6; // bright pink accent
+  }
+}
+
+.nav a {
+  margin-left: 16px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  text-decoration: none;
+  color: #f5f5f5;
+  transition: all 0.2s ease;
+  background: rgba(255, 255, 255, 0.08);
+
+  &:hover {
+    transform: translateY(-1px);
+    background: #ff4da6;
+    color: #fff;
+  }
+
+  &.active {
+    background: #ff4da6;
+    color: #fff;
+  }
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 24px;
+  bottom : 3vh;
+  overflow-y: auto;
+  height : 94vh;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0%;
+    width: 100%;
+  text-align: center;
+  padding: 24px;
+  color: #f5f5f5;
+  opacity: 0.7;
+  background: #000;
+  height:3vh
+}
